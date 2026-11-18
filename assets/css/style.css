@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -946,192 +946,105 @@ width: 800px;
 }
 
 
+/* Media Queries for All Screen Sizes */
+
+/* Laptops and Small Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .trace {
+        width: 220px;
+    }
+
+    .list ol {
+        margin-left: 50px;
+        gap: 5px;
+    }
+
+    .list ol li {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    .section4 {
+        margin: 80px 40px;
+        gap: 30px;
+    }
+
+    .section5 {
+        margin: 80px 40px;
+        gap: 40px;
+    }
+
+    .duck {
+        width: 420px;
+        height: 500px;
+    }
+
+    .why {
+        width: 420px;
+        height: auto;
+    }
+
+    .basic {
+        gap: 20px;
+    }
+
+    .package {
+        width: 320px;
+    }
+
+    .package1 {
+        width: 340px;
+    }
+
+    .sec8 {
+        width: 90%;
+        max-width: 800px;
+    }
+
+    .sec8img {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .div1 {
+        width: 460px;
+    }
+
+    .contact {
+        gap: 50px;
+    }
+
+    .types {
+        gap: 50px;
+    }
+}
+
+/* Tablets and Medium Screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .section1 {
+        height: 80px;
+        align-items: center;
+    }
+
+    .trace {
+        width: auto;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:697px) {
     .trace h3 {
         display: flex;
         text-align: start;
         padding-left: 20px;
+        margin: 0;
+        line-height: 80px;
+        font-size: 28px;
     }
 
     .list {
         display: none;
+    }
+
+    .icon {
+        width: auto;
     }
 
     .magnify {
@@ -1142,291 +1055,607 @@ width: 800px;
         display: flex;
         position: absolute;
         right: 70px;
+        top: 30px;
     }
 
     .bar {
         display: flex;
         position: absolute;
-        right: 10px;
-        bottom: 18px;
+        right: 20px;
+        top: 22px;
     }
 
     .signature {
-        position: absolute;
-        left: 20px;
+        left: 40px;
+        bottom: 40px;
+        width: calc(100% - 80px);
+        max-width: 450px;
+    }
 
-
+    .signature h1 {
+        font-size: 70px;
     }
 
     .signature h4 {
+        font-size: 20px;
+    }
+
+    .signature h6 {
+        font-size: 18px;
+    }
+
+    .section3 {
+        height: auto;
+        padding: 70px 20px;
+    }
+
+    .about {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .about1 {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .section4 {
+        margin: 50px 20px;
+        gap: 30px;
+    }
+
+    .section4 .best {
+        width: 45%;
+        min-width: 280px;
+    }
+
+    .section5 {
+        flex-direction: column;
+        margin: 60px 20px;
+        gap: 40px;
+    }
+
+    .duck {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+    }
+
+    .why {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .section6 {
+        height: auto;
+        background-size: cover;
+    }
+
+    .numbers {
+        height: auto;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .happy {
+        width: 160px;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .happy h1 {
+        font-size: 50px;
+        margin: 10px 0;
+    }
+
+    .happy p {
         font-size: 16px;
+        margin: 0;
+    }
 
+    .section7 {
+        padding: 60px 20px;
+    }
 
+    .basic {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .package {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .package1 {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .section8 {
+        padding-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .sec8 {
+        width: 100%;
+        max-width: 700px;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .sec8img {
+        width: 100%;
+        max-width: 700px;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .section9 {
+        padding: 60px 20px;
+        line-height: normal;
+    }
+
+    .mixdiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .div1 {
+        width: 100%;
+        max-width: 580px;
+        padding: 15px;
+    }
+
+    .div1 p {
+        line-height: 26px;
+    }
+
+    .stay {
+        padding: 60px 20px;
+    }
+
+    .stay1 {
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .contact {
+        gap: 40px;
+        padding: 50px 30px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .types {
+        gap: 40px;
+    }
+}
+
+/* Small Tablets and Large Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+    .signature {
+        left: 20px;
+        bottom: 30px;
+        width: calc(100% - 40px);
+        max-width: 380px;
     }
 
     .signature h1 {
         font-size: 50px;
     }
 
+    .signature h4 {
+        font-size: 16px;
+    }
+
     .signature h6 {
         font-size: 16px;
-        font-weight: 200;
     }
 
     .about1 h3 {
-       font-size: 1.3rem;
-        text-align: center;
-        line-height: 40px;
-        margin-top: 0px;
-
-
-    }
-
-    .about .us {
-        justify-content: center;
-        display: flex;
-        font-size: 20px;
-        color: orange;
-        font-weight: 100px;
-        margin-bottom: 0px;
-
-
-
-    }
-
-    .about {
-
-        width: 500px;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-
-
+        font-size: 1.4rem;
+        line-height: 35px;
     }
 
     .about1 p {
-        font-size: 1rem;
-
-        padding: 20px;
-        text-align: center !important;
-    }
-
-    .about1 {
-        line-height: 25px;
-        padding: 10px;
-        width: 400px;
-
+        font-size: 15px;
+        padding: 10px 0;
     }
 
     .section4 {
-
-        background-color: white;
-        margin: 30px;
-
-        gap: 30px;
-        justify-content: start;
-
-
+        margin: 40px 15px;
+        gap: 20px;
     }
 
     .section4 .best {
-
-        width: 460px;
-
-
-
-
+        width: 100%;
+        max-width: 400px;
     }
 
     .section5 {
-        display: block;
-        margin: 30px;
-
+        margin: 40px 15px;
+        gap: 30px;
     }
 
     .duck {
-        height: 500px;
-        width: 370px;
+        height: 320px;
     }
 
-    .why {
-        height: 500px;
-        width: 380px;
-
-
-        text-align: justify;
-        font-size: 17px;
-    }
-
-    .happy {
-
-        width: 200px;
-        font-size: 20px;
-
-        display: block;
-        text-align: center;
-
-
-    }
-
-    .section6 {
-        height: 400px;
-
-
+    .why h1 {
+        font-size: 32px;
     }
 
     .numbers {
-        position: relative;
-        height: 400px;
-        background-color: rgba(0, 0, 0, 0.473);
-        display: flex;
-        gap: 0PX !important;
-        justify-content: center !important;
-        align-items: center !important;
-        padding: 50px 0px;
+        padding: 40px 10px;
+        gap: 20px;
+    }
 
-
-
+    .happy {
+        width: 130px;
     }
 
     .happy h1 {
-
-
-        font-size: 40px !important;
-
-
+        font-size: 40px;
     }
 
     .happy p {
-
-        font-size: 10px;
+        font-size: 14px;
     }
-    
-.stay {
 
-    width: 100%;
-    align-content: center;
-    justify-items: center;
-    padding: 70px 0px 100px 0px;
+    .section7 {
+        padding: 50px 15px;
+    }
 
+    .section7 h3 {
+        font-size: 28px;
+    }
+
+    .package {
+        max-width: 350px;
+    }
+
+    .package1 {
+        max-width: 360px;
+    }
+
+    .section8 {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .sec8 {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sec8 h3 {
+        font-size: 26px;
+    }
+
+    .sec8img {
+        height: 280px;
+    }
+
+    .section9 {
+        padding: 50px 15px;
+    }
+
+    .section9 h3 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .div1 p {
+        font-size: 18px;
+    }
+
+    .stay {
+        padding: 50px 15px;
+    }
+
+    .stay1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stay1 h3 {
+        font-size: 30px;
+    }
+
+    .email {
+        width: 100%;
+        max-width: 380px;
+        margin: 15px 0 10px 0;
+    }
+
+    .stay1 button {
+        width: 100%;
+        max-width: 380px;
+        margin: 0;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px 20px 20px;
+    }
+
+    .types {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
 }
 
-.stay1 {
+/* Small Screens and Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .section1 {
+        height: 70px;
+    }
 
+    .trace h3 {
+        font-size: 24px;
+        line-height: 70px;
+        padding-left: 15px;
+    }
 
-    width: 380px;
-    text-align: center;
-    justify-content: center;
-padding: 10PX;
-   display: flex;
-   flex-direction: column;
-  
-}
+    .moon {
+        right: 60px;
+        top: 25px;
+        font-size: 18px;
+    }
 
-.stay1 h3 {
-    font-size: 35px;
-    font-weight: 300;
-}
+    .bar {
+        right: 15px;
+        top: 18px;
+        height: 32px;
+        width: 32px;
+        font-size: 22px;
+    }
 
-.stay1 p {
-    color: grey;
-    font-size: 20px;
-    line-height: 25px;
-}
+    .signature {
+        left: 15px;
+        bottom: 20px;
+        width: calc(100% - 30px);
+    }
 
-.email {
-    height: 60px;
-    width: 370px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid grey;
-    justify-content: center;
-    padding-left: 20px;
-    margin-top: 30px;
+    .signature h1 {
+        font-size: 38px;
+    }
 
+    .signature h4 {
+        font-size: 14px;
+    }
 
-}
+    .signature h6 {
+        font-size: 14px;
+    }
 
-.stay1 button {
-    height: 60px;
-    width: 370px;
-    margin-left: 4px;
-    border-radius: 10px;
-    border: 1px solid orange;
-    background-color: orange;
-    color: white;
-    font-size: 15px;
-}
+    .signature button {
+        height: 45px;
+        width: 120px;
+        font-size: 13px;
+    }
 
+    .btn1 {
+        margin-left: 5px;
+    }
 
+    .section3 {
+        padding: 40px 15px;
+    }
 
-.section8 {
-    width: 100%;
-    margin-bottom: 100px;
+    .about .us {
+        font-size: 18px;
+    }
 
+    .about h3 {
+        font-size: 1.25rem;
+        line-height: 28px;
+    }
 
-}
+    .about1 p {
+        font-size: 14px;
+        line-height: 22px;
+    }
 
-.sec8 {
+    .section4 {
+        margin: 30px 15px;
+    }
 
+    .section4 .best {
+        font-size: 16px;
+        padding: 15px;
+    }
 
-width: 380px;
-    padding-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+    .best .icon {
+        font-size: 26px;
+    }
 
+    .section5 {
+        margin: 30px 15px;
+        gap: 20px;
+    }
 
-}
+    .duck {
+        height: 240px;
+    }
 
-.sec8 p {
-    color: grey;
-    font-weight: 100;
-    font-size: 19px;
-    line-height: 30px;
-padding: 0px 30px 30px 20px;
+    .choose {
+        font-size: 22px;
+    }
 
-}
+    .why h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
 
-.sec8 h3 {
-    font-weight: 500;
-    font-size: 35px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    padding: 0px 40px 0px 20px;
+    .why {
+        font-size: 14px;
+        line-height: 22px;
+    }
 
-}
+    .numbers {
+        gap: 15px;
+        padding: 30px 10px;
+    }
 
-.sec8 h6 {
-    color: orange;
-    font-size: 30px;
-    font-weight: 50;
-    margin-bottom: 5px;
-  
-}
+    .happy {
+        width: 120px;
+    }
 
-.sec8img {
-  
-    width: 380px;
-    background-image: url(/assets/images/banner4.jpg);
-  
-    background-size: 500px 400px;
+    .happy h1 {
+        font-size: 32px;
+    }
 
-    border-radius: 20px;
-    justify-self: center;
- 
-   
+    .happy p {
+        font-size: 12px;
+    }
 
+    .section7 {
+        padding: 40px 15px;
+    }
 
-}  
-.contact{ 
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-}
-.types{ 
-    display: flex;
-    flex-wrap: wrap;
-}
+    .section7 p {
+        font-size: 18px;
+    }
 
+    .section7 h3 {
+        font-size: 24px;
+    }
 
+    .package, .package1 {
+        width: 100%;
+    }
+
+    .dollar p, .dollar1 h4 {
+        font-size: 32px;
+    }
+
+    .package ol li, .package1 ol li {
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+    .section8 {
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sec8 h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .sec8 h3 {
+        font-size: 20px;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .sec8 p {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+    }
+
+    .sec8img {
+        height: 200px;
+        border-radius: 12px;
+    }
+
+    .section9 {
+        padding: 40px 15px;
+    }
+
+    .section9 p {
+        font-size: 18px;
+    }
+
+    .section9 h3 {
+        font-size: 22px;
+    }
+
+    .div1 p {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 5px 10px;
+    }
+
+    .div1 span {
+        font-size: 22px;
+    }
+
+    .div2 {
+        margin-top: 15px;
+        padding-left: 10px;
+    }
+
+    .john h5 {
+        font-size: 18px;
+    }
+
+    .john h6 {
+        font-size: 15px;
+    }
+
+    .stay {
+        padding: 40px 15px;
+    }
+
+    .stay1 h3 {
+        font-size: 22px;
+    }
+
+    .stay1 p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .email {
+        height: 50px;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .stay1 button {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .contact {
+        padding: 30px 15px 15px 15px;
+        gap: 20px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    .types {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .company ul {
+        font-size: 16px;
+    }
+
+    .company li {
+        padding-top: 10px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+
+    .footer span {
+        font-size: 15px;
+    }
 }
